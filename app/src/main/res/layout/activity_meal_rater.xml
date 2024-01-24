@@ -1,0 +1,33 @@
+<!-- This is the layout for the main activity that contains the EditTexts for the restaurant and dish, a button to rate the meal, and TextViews to display the rating -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Restaurant" />
+
+    <EditText
+        android:id="@+id/editTextDish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish" />
+
+    <Button
+        android:id="@+id/buttonRateMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RATE MEAL"
+        android:onClick="showRatingDialog" />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>
